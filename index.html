@@ -1,19 +1,77 @@
 <!DOCTYPE html>
-<html>
- <head>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Perfil de usuario con biografía, contacto y formulario de actualización.">
+  <title>Perfil de Usuario</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header>
+    <h1>Perfil de Usuario</h1>
+  </header>
+
+  <main>
+   
+    <section class="perfil">
+      <img src="perfil.jpg"Foto de perfil del usuario width="120">
+    </section>
+
+
+    <article>
+      <h2>Biografía</h2>
+      <p>
+        Hola, soy Tomás. Estudio Ingeniería en Sistemas en la UTN. 
+        Me apasiona la programación, la tecnología y el aprendizaje continuo.
+      </p>
+    </article>
+
     
+    <section>
+      <h2>Detalles de Contacto</h2>
+      <table class="tabla" border="1">
+        <thead>
+          <tr>
+            <th>Tipo</th>
+            <th>Detalle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Email</td>
+            <td>arandatomi10@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Teléfono</td>
+            <td>+54 9 261 209 9934</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
+   
+    <section>
+      <h2>Actualizar Perfil</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
 
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
 
- </head>
+        <label for="bio">Biografía:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Escribe algo sobre ti"></textarea>
 
+        <button type="submit">Guardar cambios</button>
+      </form>
+    </section>
+  </main>
 
+  <footer>
+    <p>&copy; 2025 Perfil de Usuario - Todos los derechos reservados.</p>
+  </footer>
 
-<header>
-    Hola
-</header>
-
-
-
-
+</body>
 </html>
